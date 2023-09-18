@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/* video */
+.banner {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+.banner video {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+}
+/* video */
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    height: 100px;
+    position: fixed;
+    box-shadow: 0 0 8px 0;
+    width: 100%;
+    background-color: rgba(0, 255, 242, 0.055);
+    justify-content: space-around;
+}
+.logo {
+    display: flex;
+}
+img {
+    height: 65px;
+}
+ul {
+    display: flex;
+    font-size: 35px;
+    gap: 40px;
+}
+a {
+    font-weight: 700;
+    transition: .5s;
+    color: aqua;
+}
+a:hover {
+    font-weight: 700;
+    color: rgb(255, 208, 0);
+}
+.logo2 {
+    display: none;
+}
+@media screen and (max-width: 750px) {
+
+    nav {
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+        justify-content: center;
+    }
+    .banner {
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .banner video {
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+        height: 100%;
+    }
+    .logo2 {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        box-shadow: 0 0 8px 0;
+        width: 100%;
+        background-color: rgba(0, 255, 242, 0.055);
+        justify-content: space-around;
+    }
+    img {
+        display: none;
+    }
+    .foto {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        gap: 100px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    nav {
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .banner {
+        width: 100%;
+        display: flex;
+
+        height: 100vh;
+    }
+    .banner video {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+    }
+    img {
+        display: none;
+    }
+    ul {
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+    }
+}
