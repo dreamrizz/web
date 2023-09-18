@@ -10,13 +10,12 @@
 .banner {
     width: 100%;
     display: flex;
-    z
     height: 100vh;
 }
 .banner video {
+    position: absolute;
     width: 100%;
     display: flex;
-    position: absolute;
     object-fit: cover;
     height: 100%;
 }
@@ -24,11 +23,13 @@
 nav {
     display: flex;
     align-items: center;
+    position: absolute;
+    z-index: 2;
     height: 100px;
     position: fixed;
     box-shadow: 0 0 8px 0;
     width: 100%;
-    background-color: rgb(0, 255, 242);
+    background-color: rgba(0, 255, 242, 0.055);
     justify-content: space-around;
 }
 .logo {
@@ -45,10 +46,11 @@ ul {
 a {
     font-weight: 700;
     transition: .5s;
+    color: aqua;
 }
 a:hover {
     font-weight: 700;
-    color: gray;
+    color: rgb(255, 208, 0);
 }
 .logo2 {
     display: none;
@@ -64,25 +66,25 @@ a:hover {
     .banner {
         width: 100%;
         display: flex;
-        z
+        margin-top: 40px;
         height: 100vh;
+        margin: 0 auto;
     }
     .banner video {
         width: 100%;
         display: flex;
-        position: absolute;
         object-fit: cover;
         height: 100%;
     }
     .logo2 {
         display: flex;
-        display: flex;
         align-items: center;
         height: 100px;
         position: fixed;
+        top: 0;
         box-shadow: 0 0 8px 0;
         width: 100%;
-        background-color: rgb(0, 255, 242);
+        background-color: rgba(0, 255, 242, 0.055);
         justify-content: space-around;
     }
     img {
@@ -107,7 +109,7 @@ a:hover {
     .banner {
         width: 100%;
         display: flex;
-        z
+
         height: 100vh;
     }
     .banner video {
